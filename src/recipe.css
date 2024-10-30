@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Add Pacifico font */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tenne-tawny: #d65108; /* Light orange color */
+  --tenne-tawny-dark: #b54507; /* Darker orange color */
+  --white: #ffffff; /* White color */
+  --background-light: #fff6f0; /* Light background */
+  --background-instructions: #f8e3dc; /* Light pink background for instructions */
+  --background-ingredients: #ffebd6; /* Light peach background for ingredients */
+  --text-color: #333; /* Dark text color */
+}
+
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--tenne-tawny);
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header .btn {
+  background-color: #fff;
+  color: var(--tenne-tawny);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header .btn:hover {
+  background-color: var(--tenne-tawny-dark);
+  color: #fff;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+  border-color: var(--tenne-tawny);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.container h2 {
+  color: #333;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--tenne-tawny);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#recipe-details {
+  padding: 2rem;
+  border: 1px solid var(--tenne-tawny);
+  border-radius: 0.5rem;
+  background-color: var(--background-light);
+}
+
+.meal-row {
+  display: flex; /* Flex layout for meal name and ingredients */
+  justify-content: space-between; /* Space between meal name and ingredients */
+  align-items: flex-start; /* Align items at the top */
+}
+
+.meal-name {
+  flex: 2; /* Increase space for meal name */
+  font-family: 'Pacifico', cursive; /* Use Pacifico font for meal name */
+  font-size: 2.5rem; /* Adjust font size for prominence */
+  color: var(--tenne-tawny); /* Color for the meal name */
+}
+
+.meal-ingredients {
+  flex: 2; /* Allow ingredients to take lesser space */
+  margin-left: 2rem; /* Space between meal name and ingredients */
+  background-color: var(--background-ingredients); /* Set background color for ingredients */
+  border-radius: 0.5rem; /* Rounded corners for ingredients */
+  padding: 1rem; /* Padding for inner spacing */
+}
+
+.instruction-image-row {
+  display: flex; /* Flex layout for instructions and image */
+  margin-top: 2rem; /* Space above the instruction/image row */
+}
+
+.instructions {
+  flex: 1; /* Decrease space for instructions */
+  padding-right: 1rem; /* Add some space on the right */
+  background-color: var(--background-instructions); /* Set background color for instructions */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 1rem; /* Padding for inner spacing */
+  margin-right: 2rem; /* Reduced space between image and instructions */
+}
+
+.meal-image {
+  max-width: 500px; /* Set maximum width for the image */
+  height: auto; /* Auto height for responsive images */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#recipe-details h3 {
+  font-size: 5rem; /* Larger font size for meal name */
+  font-weight: 600;
+  color: var(--tenne-tawny);
+  margin-bottom: 1rem;
+}
+
+#recipe-details h4 {
+  font-size: 1.5rem; /* Ingredient header size */
+  font-weight: 500; /* Medium weight for better visibility */
+  color: var(--tenne-tawny);
+  margin-top: 1.5rem; /* Space above ingredients */
+}
+
+#recipe-details ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: var(--text-color);
+}
+
+#recipe-details ul li {
+  margin-bottom: 0.5rem; /* Space between ingredients */
+}
+
+#recipe-details p {
+  margin-top: 1rem;
+  color: var(--text-color);
+  line-height: 1.5; /* Improve readability */
+}
+
+.youtube-link {
+  display: block; /* Center the link */
+  margin: 2rem auto; /* Center the link and add margin */
+  padding: 0.75rem 1.5rem;
+  background-color: var(--tenne-tawny);
+  color: var(--white);
+  text-align: center; /* Center the text */
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem; /* Bigger font for visibility */
+  transition: background-color 0.3s ease;
+}
+
+.youtube-link:hover {
+  background-color: var(--tenne-tawny-dark);
+}

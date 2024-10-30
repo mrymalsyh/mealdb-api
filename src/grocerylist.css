@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tenne-tawny: #d65108;
+  --tenne-tawny-dark: #b54507;
+}
+
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--tenne-tawny);
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header .btn {
+  background-color: #fff;
+  color: var(--tenne-tawny);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header .btn:hover {
+  background-color: var(--tenne-tawny-dark);
+  color: #fff;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+}
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  display: flex; /* Flexbox layout */
+}
+
+.form-container {
+  flex: 1; /* Allow the form to take up one part of the space */
+  margin-right: 20px; /* Space between the form and grocery list */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.grocery-list-container {
+  flex: 2; /* Allow the grocery list to take up more space */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--tenne-tawny-dark);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--tenne-tawny-dark);
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--tenne-tawny-dark);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b54a00;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid var(--tenne-tawny-dark);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+li .actions {
+  display: flex;
+  gap: 10px;
+}
+
+li .actions button {
+  background-color: var(--tenne-tawny-dark);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li .actions button:hover {
+  background-color: #b54a00;
+}

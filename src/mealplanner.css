@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --tenne-tawny: #d65108;
+  --tenne-tawny-dark: #b54507;
+}
+
+body {
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--tenne-tawny);
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header .btn {
+  background-color: #fff;
+  color: var(--tenne-tawny);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header .btn:hover {
+  background-color: var(--tenne-tawny-dark);
+  color: #fff;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+  border-color: var(--tenne-tawny);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--tenne-tawny);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--tenne-tawny);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.planner-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--tenne-tawny);
+  border-radius: 0.5rem;
+  background-color: #fff6f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planner-item .meal-img img {
+  width: 150px; /* Increased width from 120px */
+  height: 150px; /* Increased height proportionally */
+  border-radius: 0.5rem;
+  margin-right: 2rem; /* Increased margin for better spacing */
+}
+
+.meal-ingredients {
+  flex: 1;
+  color: var(--tenne-tawny-dark);
+}
+
+.meal-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--tenne-tawny-dark);
+  margin-bottom: 0.5rem;
+}
+
+.meal-ingredients h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--tenne-tawny);
+}
+
+.meal-ingredients ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.meal-ingredients li {
+  margin-bottom: 0.25rem;
+}
+
+.remove-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--tenne-tawny);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: var(--tenne-tawny-dark);
+}
+
+#planner-list p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--tenne-tawny-dark);
+}
+
+.get-recipe-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--tenne-tawny);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-recipe-btn:hover {
+  background-color: var(--tenne-tawny-dark);
+}
+
